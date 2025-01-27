@@ -19,7 +19,7 @@ service:
 # Configure the connection information for the rabbtimq service
 rabbitmq:
   username: user
-  password: UMZP8Obwj3S9nIUw
+  password: LCyJ6fabgb768hQU
   namespace: rabbitmq
   serviceName: rabbitmq
   virtualHost: /
