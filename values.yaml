@@ -11,10 +11,15 @@ image:
 firebase:
   serviceAccountFilePath: "./files/secrets/service-account.json"
 
+# Configure the service type and the port it exposes
+service:
+  type: ClusterIP
+  port: 5052
+
 # Configure the connection information for the rabbtimq service
 rabbitmq:
   username: user
-  password: X0CMmh6gWCO7lNSu
+  password: UMZP8Obwj3S9nIUw
   namespace: rabbitmq
   serviceName: rabbitmq
   virtualHost: /

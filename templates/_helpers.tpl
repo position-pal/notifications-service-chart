@@ -24,3 +24,40 @@ initContainers:
                 name: {{ .Release.Name }}-postgresql
                 key: password
 {{- end -}}
+
+{{- define "notifications-service.env" -}}
+- name: FIREBASE_SERVICE_ACCOUNT_FILE_PATH
+  value: /etc/firebase/service-account.json
+- name: POSTGRES_HOST
+  value: {{ .Release.Name }}-postgresql
+- name: POSTGRES_PORT
+  value: {{ .Values.postgresql.port | quote }}
+- name: POSTGRES_USERNAME
+  value: {{ .Values.postgresql.global.postgresql.auth.username | quote }}
+- name: POSTGRES_PASSWORD
+  valueFrom:
+    secretKeyRef:
+      name: {{ .Release.Name }}-postgresql
+      key: password
+- name: RABBITMQ_VIRTUAL_HOST
+  value: {{ .Values.rabbitmq.virtualHost | quote }}
+- name: RABBITMQ_HOST
+  value: "{{ .Values.rabbitmq.serviceName }}.{{ .Values.rabbitmq.namespace }}.svc.cluster.local"
+- name: RABBITMQ_PORT
+  value: {{ .Values.rabbitmq.port | quote }}
+- name: RABBITMQ_USERNAME
+  value: {{ .Values.rabbitmq.username | quote }}
+- name: RABBITMQ_PASSWORD
+  valueFrom:
+    secretKeyRef:
+      name: {{ .Release.Name }}-notification-service-secrets
+      key: rabbitmq-password
+
+- name: GRPC_PORT
+  value: {{ .Values.grpcPort | quote }}
+{{- end -}}
+
+{{- define "notifications-service.labels" -}}
+app: notifications-service
+release: {{ .Release.Name }}
+{{- end -}}
