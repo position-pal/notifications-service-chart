@@ -1,0 +1,29 @@
+Thank you for installing {{ .Chart.Name }}.
+
+Your release is named {{ .Release.Name }}.
+
+Start using the notifiations-service:
+
+1. Forward the service port to your local machine:
+   kubectl port-forward svc/{{ .Release.Name }}-user-service 5052:5052 -n {{ .Release.Namespace }}
+   
+2. Check the service logs:
+   kubectl logs -f deployment/{{ .Release.Name }}-notifications-service -n {{ .Release.Namespace }}
+
+3. Access PostgreSQL (for debugging):
+   kubectl port-forward svc/{{ .Release.Name }}-postgresql 5432:5432 -n {{ .Release.Namespace }}
+
+
+CREDENTIALS
+Sensitive informations are stored using secrets
+
+PostgreSQL credentials:
+   Username: {{ .Values.postgresql.global.postgresql.auth.username }}
+   Database: {{ .Values.postgresql.global.postgresql.auth.database }}
+   Password: echo $(kubectl get secret --namespace {{ .Release.Namespace }} {{ .Release.Name }}-postgresql -o jsonpath="{.data.password}" | base64 -d)
+
+RabbitMQ credentials:
+   Host: {{ .Values.rabbitmq.serviceName }}.{{ .Values.rabbitmq.namespace }}.svc.cluster.local
+   Port: {{ .Values.rabbitmq.port }}
+   Username: {{ .Values.rabbitmq.username }}
+   Password: echo $(kubectl get secret --namespace {{ .Release.Namespace }} {{ .Release.Name }}-notifications-service-secrets -o jsonpath="{.data.rabbitmq-password}" | base64 -d)

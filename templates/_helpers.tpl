@@ -50,7 +50,7 @@ initContainers:
 - name: RABBITMQ_PASSWORD
   valueFrom:
     secretKeyRef:
-      name: {{ .Release.Name }}-notification-service-secrets
+      name: {{ .Release.Name }}-notifications-service-secrets
       key: rabbitmq-password
 
 - name: GRPC_PORT

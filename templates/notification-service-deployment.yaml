@@ -29,7 +29,7 @@ spec:
       volumes:
         - name: firebase-credentials
           secret:
-            secretName: {{ .Release.Name }}-notification-service-firebase-secrets
+            secretName: {{ .Release.Name }}-notifications-service-firebase-secrets
             items:
             - key: service-account.json
               path: service-account.json
