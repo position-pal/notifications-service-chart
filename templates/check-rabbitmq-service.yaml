@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Release.Name }}-rabbitmq-check
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade
+spec:
+  template:
+    spec:
+      containers:
+        - name: check-rabbitmq
+          image: curlimages/curl:8.11.1
+          command:
+            - sh
+            - -c
+            - |
+              SERVICE_NAME="{{ .Values.rabbitmq.serviceName }}"
+              NAMESPACE="{{ .Values.rabbitmq.namespace }}"
+              PORT="{{ .Values.rabbitmq.port }}"
+              FQDN="${SERVICE_NAME}.${NAMESPACE}.svc.cluster.local"
+
+              echo "Checking RabbitMQ at ${FQDN}:${PORT}..."
+
+              if nc -zv ${FQDN} ${PORT}; then
+                echo "RabbitMQ service is available."
+                exit 0
+              else
+                echo "RabbitMQ service is not available."
+                exit 1
+              fi
+      restartPolicy: Never
+  backoffLimit: 4
