@@ -7,9 +7,9 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-# Firebase configuration
-firebase:
-  serviceAccountFilePath: "./files/secrets/service-account.json"
+# Firebase service account file content
+serviceAccount: ""
+  
 
 # Configure the service type and the port it exposes
 service:
@@ -19,7 +19,7 @@ service:
 # Configure the connection information for the rabbtimq service
 rabbitmq:
   username: user
-  password: LCyJ6fabgb768hQU
+  password: dyNTSrTXPHsZ8R2B
   namespace: rabbitmq
   serviceName: rabbitmq
   virtualHost: /

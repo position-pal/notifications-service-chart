@@ -5,7 +5,7 @@ Your release is named {{ .Release.Name }}.
 Start using the notifiations-service:
 
 1. Forward the service port to your local machine:
-   kubectl port-forward svc/{{ .Release.Name }}-user-service 5052:5052 -n {{ .Release.Namespace }}
+   kubectl port-forward svc/{{ .Release.Name }}-notifications-service 5052:5052 -n {{ .Release.Namespace }}
    
 2. Check the service logs:
    kubectl logs -f deployment/{{ .Release.Name }}-notifications-service -n {{ .Release.Namespace }}
