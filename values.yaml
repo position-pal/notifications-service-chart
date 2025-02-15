@@ -4,7 +4,7 @@ replicaCount: 1
 # Base informations for the service image
 image:
   repository: positionpal/notification-service
-  tag: latest
+  tag: latest@sha256:1178471040674c453937f0a068f306498330e3517b2ccc02e23dd4bf7ab2891f
   pullPolicy: IfNotPresent
 
 # Firebase service account file content
