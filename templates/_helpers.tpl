@@ -58,6 +58,6 @@ initContainers:
 {{- end -}}
 
 {{- define "notifications-service.labels" -}}
-app: notifications-service
+app: {{ .Values.serviceName }}
 release: {{ .Release.Name }}
 {{- end -}}

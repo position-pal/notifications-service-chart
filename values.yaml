@@ -1,6 +1,3 @@
-# Control the number of replicas for the chat-service
-replicaCount: 1
-
 # Base informations for the service image
 image:
   repository: positionpal/notification-service
@@ -10,6 +7,10 @@ image:
 # Firebase service account file content
 serviceAccount: ""
   
+# Control the number of replicas for the notification-service
+replicaCount: 1
+
+serviceName: "notification-service"
 
 # Configure the service type and the port it exposes
 service:
