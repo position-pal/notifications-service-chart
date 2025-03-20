@@ -1,3 +1,16 @@
+## [1.4.0](https://github.com/position-pal/notifications-service-chart/compare/1.3.0...1.4.0) (2025-03-20)
+
+### Dependency updates
+
+* **api-deps:** update positionpal/notification-service:latest docker digest to 0055da6 ([#25](https://github.com/position-pal/notifications-service-chart/issues/25)) ([b2425d3](https://github.com/position-pal/notifications-service-chart/commit/b2425d31edf3c6e5ddf47eae2457951c5824c194))
+* **deps:** update helm release postgresql to v16.5.2 ([#23](https://github.com/position-pal/notifications-service-chart/issues/23)) ([2f94239](https://github.com/position-pal/notifications-service-chart/commit/2f942394a98dc5328d51e6cc102b26a0d725ce11))
+* **deps:** update helm release postgresql to v16.5.3 ([#24](https://github.com/position-pal/notifications-service-chart/issues/24)) ([7479f3a](https://github.com/position-pal/notifications-service-chart/commit/7479f3a6ec598221633f29c99c0e3506055f430c))
+* **deps:** update helm release postgresql to v16.5.4 ([#26](https://github.com/position-pal/notifications-service-chart/issues/26)) ([b2711e5](https://github.com/position-pal/notifications-service-chart/commit/b2711e52004e3b80ae86cc08a380d35501715c71))
+
+### Build and continuous integration
+
+* adding if condition for release a new chart ([3fd1677](https://github.com/position-pal/notifications-service-chart/commit/3fd167730815ea4e7c8b29a6a8ee0e1f774eda66))
+
 ## [1.3.0](https://github.com/position-pal/notifications-service-chart/compare/1.2.0...1.3.0) (2025-03-17)
 
 ### Dependency updates
