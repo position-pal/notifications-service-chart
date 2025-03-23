@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/position-pal/notifications-service-chart/compare/1.4.0...1.5.0) (2025-03-23)
+
+### Dependency updates
+
+* **api-deps:** update positionpal/notification-service:latest docker digest to ceec2a0 ([#28](https://github.com/position-pal/notifications-service-chart/issues/28)) ([55c81e3](https://github.com/position-pal/notifications-service-chart/commit/55c81e32c03ceaa2ac159744eea3aae8a0760641))
+* **deps:** update helm release postgresql to v16.5.5 ([#27](https://github.com/position-pal/notifications-service-chart/issues/27)) ([3b82e5f](https://github.com/position-pal/notifications-service-chart/commit/3b82e5ffa7ec3e123f0e6b457e2b0f5fcfdfe96e))
+
 ## [1.4.0](https://github.com/position-pal/notifications-service-chart/compare/1.3.0...1.4.0) (2025-03-20)
 
 ### Dependency updates
