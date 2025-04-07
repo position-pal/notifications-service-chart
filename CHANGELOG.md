@@ -1,3 +1,15 @@
+## [1.5.1](https://github.com/position-pal/notifications-service-chart/compare/1.5.0...1.5.1) (2025-04-07)
+
+### Dependency updates
+
+* **deps:** update helm release postgresql to v16.5.6 ([#29](https://github.com/position-pal/notifications-service-chart/issues/29)) ([79645d2](https://github.com/position-pal/notifications-service-chart/commit/79645d268dfbb6cb7784766bd33c8c60d78bb55d))
+* **deps:** update helm release postgresql to v16.6.0 ([#30](https://github.com/position-pal/notifications-service-chart/issues/30)) ([f4b680f](https://github.com/position-pal/notifications-service-chart/commit/f4b680f495ffb3d361c14f6c671b83c16538db93))
+* **deps:** update helm release postgresql to v16.6.1 ([#31](https://github.com/position-pal/notifications-service-chart/issues/31)) ([3c60ac7](https://github.com/position-pal/notifications-service-chart/commit/3c60ac7b1e2ca01582d9961c1c68b6f6e40f30b1))
+
+### Documentation
+
+* edit README ([3ddaee4](https://github.com/position-pal/notifications-service-chart/commit/3ddaee476c507a7169794ab181959b9bbc49f30e))
+
 ## [1.5.0](https://github.com/position-pal/notifications-service-chart/compare/1.4.0...1.5.0) (2025-03-23)
 
 ### Dependency updates
