@@ -1,7 +1,7 @@
 # Base informations for the service image
 image:
   repository: positionpal/notification-service
-  tag: latest@sha256:2b9de81378ad1e4170d8a1ca742d349256f4a9956f3b947ab0527f7ff63deb71
+  tag: latest@sha256:4fc10a16be9f366ccbec01a4855058076a686b8c4754ad625754aab6997c336f
   pullPolicy: IfNotPresent
 
 # Firebase service account file content
