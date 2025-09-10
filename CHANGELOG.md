@@ -1,3 +1,9 @@
+## [1.13.0](https://github.com/position-pal/notifications-service-chart/compare/1.12.0...1.13.0) (2025-09-10)
+
+### Dependency updates
+
+* **api-deps:** update positionpal/notification-service:latest docker digest to 83d286f ([#94](https://github.com/position-pal/notifications-service-chart/issues/94)) ([f2644cc](https://github.com/position-pal/notifications-service-chart/commit/f2644cc319d709623d66eac7dd3b0c1a075bdd6b))
+
 ## [1.12.0](https://github.com/position-pal/notifications-service-chart/compare/1.11.0...1.12.0) (2025-09-10)
 
 ### Dependency updates
