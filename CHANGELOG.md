@@ -1,3 +1,33 @@
+## [1.14.0](https://github.com/position-pal/notifications-service-chart/compare/1.13.0...1.14.0) (2025-10-23)
+
+### Dependency updates
+
+* **api-deps:** update positionpal/notification-service:latest docker digest to a5e1bfb ([#116](https://github.com/position-pal/notifications-service-chart/issues/116)) ([462a4b0](https://github.com/position-pal/notifications-service-chart/commit/462a4b0f7a029ca43f3ef4e276f987c65668faac))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.142 ([#95](https://github.com/position-pal/notifications-service-chart/issues/95)) ([0025d16](https://github.com/position-pal/notifications-service-chart/commit/0025d1601050ec3e60a419d454a9dba9b6caa7a3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.143 ([#96](https://github.com/position-pal/notifications-service-chart/issues/96)) ([8235cdc](https://github.com/position-pal/notifications-service-chart/commit/8235cdc88be8689482afcda6178aa2a193f854d3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.144 ([#97](https://github.com/position-pal/notifications-service-chart/issues/97)) ([ab2f7ad](https://github.com/position-pal/notifications-service-chart/commit/ab2f7adb8b752fffe18f7c750679d89846389fd2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.145 ([#98](https://github.com/position-pal/notifications-service-chart/issues/98)) ([1eca39b](https://github.com/position-pal/notifications-service-chart/commit/1eca39b4150512afd3c4d0d2c59f7d9f6cc709b6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.146 ([#99](https://github.com/position-pal/notifications-service-chart/issues/99)) ([f0b9f48](https://github.com/position-pal/notifications-service-chart/commit/f0b9f4866425b68f0574d5f69ddec0332bf21905))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.147 ([#101](https://github.com/position-pal/notifications-service-chart/issues/101)) ([98b10f5](https://github.com/position-pal/notifications-service-chart/commit/98b10f5bdd86b200ddc5017cf61d81ec62bc073a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.148 ([#112](https://github.com/position-pal/notifications-service-chart/issues/112)) ([3593629](https://github.com/position-pal/notifications-service-chart/commit/359362984389e9ca3326911337584231a0525e1a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.149 ([#114](https://github.com/position-pal/notifications-service-chart/issues/114)) ([105f9ed](https://github.com/position-pal/notifications-service-chart/commit/105f9edb1b33e6ca34c915dacf1a02cbe3c1d15c))
+* **deps:** update helm release postgresql to v18 ([#102](https://github.com/position-pal/notifications-service-chart/issues/102)) ([8a5d6be](https://github.com/position-pal/notifications-service-chart/commit/8a5d6be3b1785a2630531ce0a1e432c4aad8e7fe))
+* **deps:** update helm release postgresql to v18.0.11 ([#105](https://github.com/position-pal/notifications-service-chart/issues/105)) ([633f8ba](https://github.com/position-pal/notifications-service-chart/commit/633f8ba3d899f10d41dcd47ff68533cdc380b1cd))
+* **deps:** update helm release postgresql to v18.0.12 ([#106](https://github.com/position-pal/notifications-service-chart/issues/106)) ([dd99c01](https://github.com/position-pal/notifications-service-chart/commit/dd99c0171920571d23429ae459b60b6ddae5c445))
+* **deps:** update helm release postgresql to v18.0.14 ([#107](https://github.com/position-pal/notifications-service-chart/issues/107)) ([139825d](https://github.com/position-pal/notifications-service-chart/commit/139825d547285687add2a4cf9fc4c6fd97bbd5cb))
+* **deps:** update helm release postgresql to v18.0.15 ([#109](https://github.com/position-pal/notifications-service-chart/issues/109)) ([422072a](https://github.com/position-pal/notifications-service-chart/commit/422072a60d4d9f1d55ae8bcd921492f391da0562))
+* **deps:** update helm release postgresql to v18.0.16 ([#110](https://github.com/position-pal/notifications-service-chart/issues/110)) ([839010a](https://github.com/position-pal/notifications-service-chart/commit/839010a752b5fd7cb7a1429cb7b47701eb22d860))
+* **deps:** update helm release postgresql to v18.0.17 ([#111](https://github.com/position-pal/notifications-service-chart/issues/111)) ([5a87ea6](https://github.com/position-pal/notifications-service-chart/commit/5a87ea6a792e10ee1c5d7719088a22aefbd0bee6))
+* **deps:** update helm release postgresql to v18.0.8 ([#103](https://github.com/position-pal/notifications-service-chart/issues/103)) ([2f002ef](https://github.com/position-pal/notifications-service-chart/commit/2f002ef1a640d4dec16a82da30da2c7a165f9df6))
+* **deps:** update helm release postgresql to v18.0.9 ([#104](https://github.com/position-pal/notifications-service-chart/issues/104)) ([e439b01](https://github.com/position-pal/notifications-service-chart/commit/e439b01ddc81e127e22726305138f261e32a2b31))
+* **deps:** update helm release postgresql to v18.1.1 ([#113](https://github.com/position-pal/notifications-service-chart/issues/113)) ([1ea032d](https://github.com/position-pal/notifications-service-chart/commit/1ea032d99f4cba8759a146645d334ffd3babf00c))
+* **deps:** update node.js to 22.20 ([#100](https://github.com/position-pal/notifications-service-chart/issues/100)) ([e388cc0](https://github.com/position-pal/notifications-service-chart/commit/e388cc0c4733b06eab27c1872506f17a7a5e573a))
+* **deps:** update node.js to 22.21 ([#115](https://github.com/position-pal/notifications-service-chart/issues/115)) ([bf2fd39](https://github.com/position-pal/notifications-service-chart/commit/bf2fd39fa8651b967aca4c7cf09c4aaf8a634ecc))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6 ([#108](https://github.com/position-pal/notifications-service-chart/issues/108)) ([e6ae076](https://github.com/position-pal/notifications-service-chart/commit/e6ae076b7073db3a9471f5e6398eb8670338ac45))
+
 ## [1.13.0](https://github.com/position-pal/notifications-service-chart/compare/1.12.0...1.13.0) (2025-09-10)
 
 ### Dependency updates
