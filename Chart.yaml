@@ -2,8 +2,8 @@ apiVersion: v2
 name: position-pal-notifications-service
 description: Helm chart for the Position PAL Notifications Service
 type: application
-version: "1.14.0"
-appVersion: "1.14.0"
+version: "1.15.0"
+appVersion: "1.15.0"
 
 dependencies:
   - name: postgresql
